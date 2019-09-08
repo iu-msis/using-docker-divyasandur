@@ -1,0 +1,149 @@
+<html>
+<head>
+  <title>Books</title>
+<!--Compiled and minified CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!--jQuery CDN-->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+<!--Compiled and minified JavaScript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/site.css">
+</head>
+
+<body class="mainbody">
+
+    <div class ="container mainbox">
+    <h1 class="headings">Rubi's Treasure</h1>
+        <header>
+            <div id="nav-placeholder">
+            </div>
+            <script>
+            $(function(){
+            $("#nav-placeholder").load("header2.html");
+            });
+            </script>
+        </header>
+  <div data-include="header"></div>
+    <h1>
+    Explore the world of Books!
+    </h1>
+   <!-- <main class="row">-->
+
+    <table class="thistable table table-condensed table-hover" id="booktable">
+        <thead>
+            <tr>
+                <th>Title<img src="/app/public/img/caret.png"></th>
+                <th>Author<img src="/app/public/img/caret.png"></th>
+                <th>Year Published<img src="/app/public/img/caret.png"></th>
+                <th>Publisher<img src="/app/public/img/caret.png"></th>
+                <th>Page Count<img src="/app/public/img/caret.png"></th>
+                <th>MSRP ($)<img src="/app/public/img/caret.png"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Case of the Shrieking Pygmy</td>
+                <td>Devondra Pairpoint</td>
+                <td>1996</td>
+                <td>Swift and Sons</td>
+                <td>456</td>
+                <td>49.00</td>
+            </tr>
+            <tr>
+                <td>Tales of Ordinary Madness</td>
+                <td>Greg Blaceller</td>
+                <td>2007</td>
+                <td>Hills, Carol and Langworth</td>
+                <td>350</td>
+                <td>50.00</td>
+            </tr>
+            <tr>
+                <td>Look At Me</td>
+                <td>Judvig Towsie</td>
+                <td>2009</td>
+                <td>Bogan- Glover</td>
+                <td>350</td>
+                <td>65.00</td>
+            </tr>
+            <tr>
+                <td>Ordinaria Folia</td>
+                <td>Clementina Sabie</td>
+                <td>2004</td>
+                <td>Hane and Co.</td>
+                <td>700</td>
+                <td>90.00</td>
+            </tr>
+
+        </tbody>
+        </table>
+
+<form class="form-horizontal bookform" action="#" method="get">
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p>Here is a chance for you to be a part of the community and share the books you love! <br> These books will be featured on my page so that every bookworm gets to see the book you suggested</p>
+                <span class="bookformheading">Book Information</span><br>
+                </div>
+                    <div class="panel-body">
+
+                      <div class="form-group">
+                        <label class="col-sm-2" for="Title"> Book Title:</label>
+                        <div class="col-sm-10">
+                          <input type="text"  placeholder="Enter Book Title">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class=" col-sm-2" for="Author">Author:</label>
+                        <div class="col-sm-10">
+                          <input type="text"  placeholder="Enter Author Name">
+                        </div>
+                      </div>
+                        <div class="form-group">
+                        <label class=" col-sm-2" for="Yearpublished">Year Published:</label>
+                        <div class="col-sm-10">
+                          <input type="number" min="1800" max="2019" step="1" placeholder=" yyyy">
+                        </div>
+                      </div>
+                        <div class="form-group">
+                        <label class=" col-sm-2" for="Publisher">Publisher:</label>
+                        <div class="col-sm-10">
+                          <input type="text"  placeholder="Enter Publishing house">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class=" col-sm-2" for="pagenumber">Page count:</label>
+                        <div class="col-sm-10">
+                          <input type="number" placeholder="As in Orginal Book">
+                        </div>
+                      </div>
+                        <div class="form-group">
+                        <label class=" col-sm-2" for="msrp">Maximum Selling Retail Price:</label>
+                        <div class="col-sm-10">
+                          <input type="number" placeholder="MSRP as in book">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+
+                      <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                      </div>
+
+
+</form>
+<!--
+    </main>
+-->
+    </div>
+</body>
+<script src='js/tablesort.js'></script>
+
+   <script>
+    new Tablesort(document.getElementById('booktable'));
+  </script>
+
+</html>
