@@ -1,4 +1,4 @@
-;(function() {
+(function() {
   function Tablesort(el, options) {
     if (!(this instanceof Tablesort)) return new Tablesort(el, options);
 
@@ -41,7 +41,7 @@
   // Stable sort function
   // If two elements are equal under the original sort function,
   // then there relative order is reversed
-  var stabilize = function(sort, antiStabilize) {
+    var stabilize = function(sort, antiStabilize) {
     return function(a, b) {
       var unstableResult = sort(a.td, b.td);
 

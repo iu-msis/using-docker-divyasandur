@@ -124,5 +124,16 @@ margin-left: 50px;
 .aboutmepanel{
     font-family: sans-serif;
     font-size: 20;
+    font-size: 20;
     font-style: normal;
+}
+.profilepic{
+    margin:20px;
+}
+.authorname{
+    color: palevioletred;
+    font-weight: 700;
+}
+.emailink{
+    color: black;
 }
