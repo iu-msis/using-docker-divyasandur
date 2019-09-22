@@ -34,6 +34,7 @@
  
             
             <div id="userdata" v-if="user.results">
+            <form @submit.prevent="fetchUserData">
                 This is your favorite author, <span class="authorname">{{ user.results[0].name.first}} {{ user.results[0].name.last}}</span>.<!--Name--><br>
                 Here is a little more about myself...<br><br>
                 Born In: <span class="authorname">{{user.results[0].location.city}}</span><br> 
@@ -42,12 +43,12 @@
                 I come from a small town called Birmingham in United Queendom. I love writing fictional stories and sharing my mind with my readers. I grew up in a small town that had cornucopia of possibilites. I started writing when I was 10 and have not stopped ever since.<br>
                 <span class="quote">( Settle down, fans! I am not going to stop writing)</span><br>
                 
-
-                <img :src="user.results[0].picture.large"/>
-             <!--   <a target="_blank"> href="img\rubi_img.jpg"><img class= "profilepic" :src="{{user.results[0].picture.large}}" alt="profile picture" /></a> 
-                <!--https://www.pexels.com/royalty-free-images /-->
+                <div><img :src="user.results[0].picture.large"/></div>
                 <br><br>       
                 I would love to answer some questions from you guys! Send me an email <a :href="'mailto:'+user.results[0].email" class="emailink">{{user.results[0].email}}</a> here. 
+                <br><br>Click here to change!
+                <button type="submit" class="btn btn-primary">CLICK</button>
+            </form>
             </div>
         </div>
     </div>
