@@ -1,6 +1,6 @@
 /*Main o=body background*/
 .mainbody{
-    background-image: url(/app/public/img/bg.jpeg);
+    background-image: url(../img/bg.jpeg);
 }
 /*Styling for Index.html*/
 .infobox{
